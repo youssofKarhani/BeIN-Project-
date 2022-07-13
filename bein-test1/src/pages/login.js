@@ -1,7 +1,7 @@
 import React, { Component, useState,useCallback,useEffect } from 'react';
 import { useHistory,useNavigate } from "react-router-dom";
 
-import Profile from './profile';
+import "./login.css";
 
 function Login() {
 
