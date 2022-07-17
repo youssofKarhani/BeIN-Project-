@@ -7,14 +7,17 @@ function Login() {
 
   let navigate = useNavigate();
 
-
+  const [inputUsername, setInputUsername] = useState ("");
  
   const handleClick = () => {
     
     navigate('/profile');
   }
   
-
+  function inputUsernameHandler (e)  {
+    // console.log(e.target.value);
+     setInputUsername(e.target.value);
+ };
  
 
    return (
@@ -26,7 +29,7 @@ function Login() {
 
      <div>
       <div>
-    <input id="username" value = {inputText} onChange={inputTextHandler} type="text" placeholder="username"/><br/>
+    <input id="username" value = {inputUsername} onChange={inputUsernameHandler} type="text" placeholder="username"/><br/>
     </div>
     <div>
     <input type="text" placeholder="password"/>

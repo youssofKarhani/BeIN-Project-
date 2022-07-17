@@ -6,7 +6,7 @@ import React, { Component } from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./pages/Layout";
 import NoPage from "./pages/nopage";
-import Login from "./pages/loginpage";
+import Login from "./pages/login";
 import Checkout from "./pages/checkout";
 import Rewards from "./pages/rewards";
 import Profile from "./pages/profile";
@@ -24,7 +24,7 @@ export default function AppMain() {
           <Route path="checkout" element={<Checkout />} />
           <Route path="getcoins" element={<GetCoins />} />
           <Route path="rewards" element={<Rewards/>} />
-          <Route path="payment" element={<Payment />} />
+        
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
